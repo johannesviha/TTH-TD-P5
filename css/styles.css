@@ -1,26 +1,29 @@
-.header {
-    display: grid;
-    margin: auto;
-    width: 50%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+* {
+  font-family: "Roboto", sans-serif;
+}
 
-#search {
-    padding: 12px 20px 12px 10px;
-    width: 550px;
-    margin: 15px auto 15px auto;
-    border: 1px solid rgb(158, 158, 158);
-    border-radius: 8px;
- }
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+input {
+  width: 30%;
+  height: 55px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+}
 
+/* Gallery CSS Grid */
+img {
+  width: 225px;
+}
 .gallery {
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    grid-gap: 15px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  row-gap: 30px;
+  column-gap: 50px;
+  justify-content: center;
 }
